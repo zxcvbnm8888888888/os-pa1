@@ -28,7 +28,7 @@ For design and implementation of ``xv6``, please refer to the book "[xv6: a simp
 
 ## Installing xv6
 
-To install ``xv6`` on your machine, please refer to the INSTALL.md file.
+To install ``xv6`` on your machine, please refer to the [INSTALL.md](https://github.com/snu-csl/os-pa1/blob/master/INSTALL.md) file.
 
 
 ## Hand in instructions
