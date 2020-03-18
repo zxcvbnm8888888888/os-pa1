@@ -46,7 +46,7 @@ $ make
 $ sudo make install
 ```
 
-The final executable file ``qemu-system-riscv64`` will be installed in the ``/usr/local/bin`` directory. Perform the following command so that the directory is appended to your ``PATH`` environment variable.
+The final executable file ``qemu-system-riscv64`` will be installed in the ``/usr/local/bin`` directory. Perform the following command so that the directory is added to your ``PATH`` environment variable.
 
 ```
 $ echo "PATH=/usr/local/bin:\$PATH" >> ~/.bashrc
