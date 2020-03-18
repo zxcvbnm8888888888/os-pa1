@@ -21,7 +21,9 @@ The following instructions are based on the latest stable Ubuntu version 18.04.4
 $ sudo apt install git build-essential
 ```
 
-2. You need the GCC version 8 or higher, but the default GCC package, ``gcc-riscv64-linux-gnu``, in Ubuntu 18.04.4 LTS contains the GCC version 7.4.0. Instead, install the GCC version 8.3.0 as follows and link it as ``riscv64-linux-gnu-gcc``. Your 64-bit GNU toolchain will be installed in the ``/usr/bin`` directory.
+### 2. Install RISC-V GNU Toolchain
+
+You need the GCC version 8 or higher, but the default GCC package, ``gcc-riscv64-linux-gnu``, in Ubuntu 18.04.4 LTS contains the GCC version 7.4.0. Instead, install the GCC version 8.3.0 as follows and link it as ``riscv64-linux-gnu-gcc``. Your 64-bit GNU toolchain will be installed in the ``/usr/bin`` directory.
 
 ```
 $ sudo apt install gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu
@@ -29,7 +31,9 @@ $ cd /usr/bin
 $ sudo ln -s riscv64-linux-gnu-gcc-8 riscv64-linux-gnu-gcc
 ```
 
-3. Currently, no QEMU package is available in Ubuntu for the RISC-V processor. Therefore, you have to build it manually as follows. The QEMU version should be 4.1.0 or higher. You need to install ``libglib2.0-dev`` and ``libpixman-1-dev`` packages as well because they are required to compile QEMU. 
+### 3. Install QEMU for RISC-V
+
+Currently, no QEMU package is available in Ubuntu for the RISC-V processor. Therefore, you have to build it manually as follows. The QEMU version should be 4.1.0 or higher. You need to install ``libglib2.0-dev`` and ``libpixman-1-dev`` packages as well because they are required to compile QEMU. 
 
 ```
 $ sudo apt install libglib2.0-dev libpixman-1-dev
@@ -57,7 +61,9 @@ QEMU emulator version 4.1.0
 Copyright (c) 2003-2019 Fabrice Bellard and the QEMU Project developers
 ```
 
-4. Now you are ready to install ``xv6``. Please take the following steps.
+### 4. Install xv6
+
+Now you are ready to install ``xv6``. Please take the following steps.
 
 ```
 $ cd ~
@@ -66,7 +72,9 @@ $ cd xv6-riscv
 $ make 
 ```
 
-5. You can run ``xv6`` using the ``make qemu`` command. The output should look like this. 
+### 5. Run xv6
+
+You can run ``xv6`` using the ``make qemu`` command. The output should look like this. 
 
 ```
 $ make qemu
@@ -87,19 +95,25 @@ To terminate QEMU, please press ``ctrl-a`` and then ``x`` in your keyboard.
 
 The following instructions are based on the latest macOS Catalina 10.15.3.
 
-1. If your Mac does not have xcode command line tools, install them using the following command.
+### 1. Install xcode command line tools
+
+If your Mac does not have xcode command line tools, install them using the following command.
 
 ```
 % xcode-select --install
 ```
 
-2. If your Mac does not have ``homebrew``, a package manager for macOS, install it as follows.
+### 2. Install homebrew utility
+
+If your Mac does not have ``homebrew``, a package manager for macOS, install it as follows.
 
 ```
 % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-3. Now install the 64-bit RISC-V GNU toolchain using the ``brew`` command.
+### 3. Install RISC-V GNU Toolchain
+
+Now install the 64-bit RISC-V GNU toolchain using the ``brew`` command.
 
 ```
 % brew tap riscv/riscv
@@ -114,13 +128,16 @@ In case you encounter some error messages such as ``"Cannot tap riscv/riscv: inv
 
 When successful, GNU RISC-V toolchain is installed in the ``/usr/local/opt/riscv-gnu-toolchain/bin`` directory. 
 
-4. Install QEMU using the ``brew`` utility
+### 4. Install QEMU 
+
+Install QEMU using the ``brew`` utility
 
 ``` 
 % brew install qemu
 ```
 
-5. Download, build, and run ``xv6``
+### 5. Download, build, and run xv6
+
 ```
 % cd ~
 % git clone https://github.com/snu-csl/xv6-riscv
