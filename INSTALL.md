@@ -15,13 +15,13 @@ We provide the detailed instructions below on how to run ``xv6`` on Ubuntu, macO
 
 The following instructions are based on the latest stable Ubuntu version 18.04.4 LTS.
 
-* Install the prerequite packages
+1. Install the prerequite packages
 
 ```
 $ sudo apt install git build-essential
 ```
 
-* You need the GCC version 8 or higher, but the default GCC package, ``gcc-riscv64-linux-gnu``, in Ubuntu 18.04.4 LTS contains the GCC version 7.4.0. Instead, install the GCC version 8.3.0 as follows and link it as ``riscv64-linux-gnu-gcc``. Your 64-bit GNU toolchain will be installed in the ``/usr/bin`` directory.
+2. You need the GCC version 8 or higher, but the default GCC package, ``gcc-riscv64-linux-gnu``, in Ubuntu 18.04.4 LTS contains the GCC version 7.4.0. Instead, install the GCC version 8.3.0 as follows and link it as ``riscv64-linux-gnu-gcc``. Your 64-bit GNU toolchain will be installed in the ``/usr/bin`` directory.
 
 ```
 $ sudo apt install gcc-8-riscv64-linux-gnu binutils-riscv64-linux-gnu
