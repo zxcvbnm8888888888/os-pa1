@@ -112,12 +112,7 @@ In case you encounter some error messages such as ``"Cannot tap riscv/riscv: inv
 % brew install riscv-tools
 ```
 
-When successful, GNU RISC-V toolchain is installed in the ``/usr/local/opt/riscv-gnu-toolchain/bin`` directory. Perform the following command to add the directory in your PATH environment variable.
-
-``` 
-% echo "PATH=/usr/local/opt/riscv-gnu-toolchain/bin:\$PATH" >> ~/.bash_profile (or ~/.zshrc)
-% source ~/.bash_profile (or ~/.zshrc)
-```
+When successful, GNU RISC-V toolchain is installed in the ``/usr/local/opt/riscv-gnu-toolchain/bin`` directory. 
 
 * Install QEMU using the ``brew`` utility
 
@@ -125,28 +120,16 @@ When successful, GNU RISC-V toolchain is installed in the ``/usr/local/opt/riscv
 % brew install qemu
 ```
 
-* Download ``xv6``
+* Download, build, and run ``xv6``
 ```
 % cd ~
 % git clone https://github.com/snu-csl/xv6-riscv
 % cd xv6-riscv
-```
-
-* To compile xv6 on macOS, you have to modify the ``Makefile`` slightly. Locate the line with "``#TOOLPREFIX =``" (line 212) in ``Makefile`` and modify it to represent the prefix of your toolchain. Also, you need to define ``CPPFLAGS`` as null as shown below.
-
-```
-(Modify xv6 Makefile line 212)
-...
-TOOLPREFIX = /usr/local/opt/riscv-gnu-toolchain/bin/riscv64-unknown-elf-
-CPPFLAGS = 
-...
-```
-
-* Build and run ``xv6``
-```
 % make
 % make qemu
 ```
+
+Press ``ctrl-a`` and then ``x`` to terminate QEMU.
 
 
 ## Installing xv6 on Windows 10
