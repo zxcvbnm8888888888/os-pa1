@@ -15,7 +15,7 @@ We provide the detailed instructions below on how to run ``xv6`` on Ubuntu, macO
 
 The following instructions are based on the latest stable Ubuntu version 18.04.4 LTS.
 
-1. Install the prerequite packages
+### 1. Install the prerequite packages
 
 ```
 $ sudo apt install git build-essential
