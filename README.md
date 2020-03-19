@@ -33,7 +33,7 @@ To install ``xv6`` on your machine, please refer to the [INSTALL.md](https://git
 
 ## Hand in instructions
 
-* Take a screenshot of your terminal that shows your student ID and name. Send an email to the TA (81887821 @ snu) with attaching the screenshot.
+* Take a screenshot of your terminal that shows your student ID and name. Send an email to the TA (81887821 @ snu) with attaching the screenshot. Please set the subject of your email as follows: ``[OS-PA1] Student ID, Your name``
 
 ## Logistics
 
