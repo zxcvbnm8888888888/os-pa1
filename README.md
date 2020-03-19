@@ -1,5 +1,5 @@
 # 4190.307 Operating Systems (Spring 2020)
-# Project #1: Getting familar with xv6
+# Project #1: Hello world, xv6
 ### Due: 11:59PM (Wednesday), September 25
 
 ## Introduction
