@@ -146,7 +146,7 @@ Install QEMU using the ``brew`` utility
 % make qemu
 ```
 
-If the ``Makefile`` does not find the `gcc` compiler, define the ``TOOLPREFIX`` in the ``Makefile`` (line 35) as follows:
+If the ``make`` does not find the `gcc` compiler, define the ``TOOLPREFIX`` in the ``Makefile`` (line 35) as follows:
 
 ```
 ...
