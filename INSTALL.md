@@ -6,7 +6,7 @@
 The installation of ``xv6`` requires the following steps:
 
 * __GNU RISC-V toolchain__: You require 64-bit GNU RISC-V toolchain to compile the ``xv6`` source code. 
-* __QEMU for emulating a multic-core RISC-V machine__: In order to run ``xv6`` on a machine with the x86 processor, you need to install the open source machine emulator called [QEMU](https://www.qemu.org).
+* __QEMU for emulating a multi-core RISC-V machine__: In order to run ``xv6`` on a machine with the x86 processor, you need to install the open source machine emulator called [QEMU](https://www.qemu.org).
 * __xv6__: You need to build the kernel and the root file system image from the ``xv6`` source code.
 
 We provide the detailed instructions below on how to run ``xv6`` on Ubuntu, macOS, and Windows.
