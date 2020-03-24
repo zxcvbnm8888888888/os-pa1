@@ -24,7 +24,7 @@ $ git clone https://github.com/snu-csl/xv6-riscv
 For design and implementation of ``xv6``, please refer to the book [_xv6: a simple, Unix-like teaching operating system_](http://csl.snu.ac.kr/courses/4190.307/2020-1/book-riscv-rev0.pdf). Also, you may find the following RISC-V specifications useful on which ``xv6`` is based.
 
 * [RISC-V Instruction Set Manual Volume I: User-Level ISA Version 2.2](http://csl.snu.ac.kr/courses/4190.307/2020-1/riscv-spec-v2.2.pdf)
-* [RISC-V Instruction Set Manual Volume II: Privileged ISA Version 1.10](http://csl.snu.ac.kr/courses/4190.307/2020-1/riscv-sprivileged-v1.10.pdf)
+* [RISC-V Instruction Set Manual Volume II: Privileged ISA Version 1.10](http://csl.snu.ac.kr/courses/4190.307/2020-1/riscv-privileged-v1.10.pdf)
 
 ## Installing xv6
 
